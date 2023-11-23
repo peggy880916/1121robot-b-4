@@ -1,0 +1,56 @@
+Integer Tokens
+Integer Blocks
+Double TokenHeight
+Double BlockHeight
+Function main
+
+Motor On
+Power High
+Speed 30
+Accel 30, 30
+SpeedS 500
+AccelS 5000
+Tool 1
+
+Tokens = 3
+TokenHeight = 6.0
+Integer TokenID
+
+Go Retract_Safe
+
+For TokenID = Tokens To 1 Step -1
+	Pick_Infeed_Token_1()
+	Alignment_Token_1()
+Next TokenID
+
+Go Retract_Safe
+
+Fend
+
+Function Pick_Infeed_Token_1
+	'Pick Token from Infeed 將feeder那的圓形吸起來
+	Print "Picking Token from Infeed. Token ID = ", Tokens
+	Go a +X(19.16) +Y(24.84) +Z(50 + (Tokens * TokenHeight)) CP
+	Move a +X(19.16) +Y(24.84) +Z(Tokens * TokenHeight)
+	On 8
+	Wait .5
+    Move a +X(19.16) +Y(24.84) +X(-1) +Z(50 + (Tokens * TokenHeight)) CP
+	'Tokens = Tokens - 1
+Fend
+Function Alignment_Token_1
+	'Alignment Token 將圓形的放到fixture
+	Print "Aligning Token. Token ID = ", Tokens
+	Go local6 +X(25) +Y(22) +Z(20) CP
+	Move local6 +X(25) +Y(22) +Z(6)
+	Off 8
+	'放開後進行調整
+	Move local6 +X(25) +Y(22) +X(5) +Z(6)
+	Move local6 +X(25) +Y(22) +X(5) +Z(5) +Z(6) CP
+	Go local6 +X(25) +Y(22) +Z(5) +Z(6) CP
+	Move local6 +X(25) +Y(22) +Z(6)
+	'吸起來
+	On 8
+	Wait .5
+	Move local6 +X(25) +Y(22) +Z(20) CP
+Fend
+

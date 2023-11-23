@@ -1,0 +1,134 @@
+ENVT0100,LM:2023/11/23 14:29:55:965,DS:0000001659,CS:03691,MA:0A-00-27-00-00-12,EI:           
+ProgramFile1 {
+	sName="Main.prg"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=22
+		nTop=29
+		nWidth=424
+		nHeight=476
+	}
+}
+ProgramFile2 {
+	sName="TCPIPdemo.prg"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=58
+		nTop=54
+		nWidth=954
+		nHeight=728
+	}
+}
+ProgramFile3 {
+	sName="Stack_up.prg"
+	bOpened=True
+	nWinState=1
+	Window {
+		nLeft=451
+		nTop=0
+		nWidth=600
+		nHeight=436
+	}
+}
+ProgramFile4 {
+	sName="test.prg"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=77
+		nTop=29
+		nWidth=514
+		nHeight=347
+	}
+}
+nIncludeFileCount=0
+nPointFileCount=1
+PointFile1 {
+	sName="Points.pts"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=71
+		nTop=62
+		nWidth=930
+		nHeight=632
+	}
+}
+sActiveWindow="main.prg"
+CmdWindow {
+	bOpened=False
+	Window {
+		nLeft=1
+		nTop=4
+		nWidth=803
+		nHeight=728
+	}
+	nWinState=0
+}
+RunWindow {
+	bOpened=False
+	Window {
+		nLeft=23
+		nTop=13
+		nWidth=478
+		nHeight=384
+	}
+}
+IOLabelEditor {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+	nWinState=0
+}
+IOMonitor {
+	bOpened=False
+	Window {
+		nLeft=1088
+		nTop=300
+		nWidth=520
+		nHeight=488
+	}
+}
+TaskMgr {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+}
+Macros {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+}
+RobotMgr {
+	bOpened=False
+	Window {
+		nLeft=45
+		nTop=4
+		nWidth=689
+		nHeight=448
+	}
+}
+UserErrorEditor {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+	nWinState=0
+}
