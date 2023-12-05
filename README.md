@@ -9,5 +9,8 @@
   
   🔹demo video
     https://www.youtube.com/watch?v=LIREwSrFIX4
-## 🌱Task 3
+## 🌱Task 3 結合I/O按鈕執行吸取圓形及方形圓件堆疊至指定位置
+      當按下0按鈕則執行吸取圓形元件指令
+      當按下1按鈕則執行吸取方形元件指令
+      若按下按鈕則可以暫停，如恆亮則持續執行吸取指令
   🔹demo video
