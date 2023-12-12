@@ -1,1 +1,36 @@
+> print sw(1)
+ 0
+> print sw(1)
+ 1
+> print sw(2)
+ 1
+> if sw(1)=1, then HOME
+!!錯誤: 3804, 無法從命令窗口執行指定的命令。
+> ON 14
+> OFF 14
+> ON 13
+> OFF 14
+> OFF 13
+> SW(0)=1
+!!錯誤: 3100, 語法錯誤。
+> On 8
+> OFF 8
+> On 8
+> OFF 8
+> On 8
+> OFF 8
+> On 8
+> OFF 8
+> On 8
+> OFF 8
+> On 8
+> off 8
+> on 8
+> off 8
+> OFF 8
+> off 8
+> OFF 8
+> ON 8
+> OFF 8
 > 
+

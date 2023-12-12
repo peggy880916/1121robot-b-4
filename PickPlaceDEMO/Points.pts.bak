@@ -1,7 +1,7 @@
-ENVT0100,LM:2023/08/31 06:55:07:852,DS:0000002468,CS:22333,MA:04-D4-C4-73-31-2E,EI:           
+ENVT0100,LM:2023/11/22 16:32:14:349,DS:0000003355,CS:29466,MA:0A-00-27-00-00-12,EI:           
 sVersion="1.0.0"
 nDisplayMode=4
-nNumberOfPoints=11
+nNumberOfPoints=15
 Point1 {
 	nNumber=0
 	sLabel="HOME"
@@ -192,6 +192,78 @@ Point11 {
 	rU=56.607
 	rV=-61.024
 	rW=180
+	nLocal=1
+	nHand=1
+	nElbow=1
+	nWrist=1
+	nJ4Flag=0
+	nJ6Flag=0
+	bSimVisible=False
+}
+Point12 {
+	nNumber=15
+	sLabel="a"
+	sDescription="½L¤lªº¨¤"
+	rX=-129.813
+	rY=397.551
+	rZ=-7.497
+	rU=79.554
+	rV=1.237
+	rW=178.434
+	nLocal=1
+	nHand=1
+	nElbow=1
+	nWrist=1
+	nJ4Flag=0
+	nJ6Flag=0
+	bSimVisible=False
+}
+Point13 {
+	nNumber=16
+	sLabel="b"
+	sDescription=""
+	rX=197.772
+	rY=20.799
+	rZ=-1.65
+	rU=0.119
+	rV=-0.002
+	rW=-179.522
+	nLocal=1
+	nHand=1
+	nElbow=1
+	nWrist=1
+	nJ4Flag=0
+	nJ6Flag=0
+	bSimVisible=False
+}
+Point14 {
+	nNumber=17
+	sLabel="point3"
+	sDescription=""
+	rX=100.678
+	rY=21.571
+	rZ=-1.925
+	rU=0.12
+	rV=-0.002
+	rW=-179.522
+	nLocal=1
+	nHand=1
+	nElbow=1
+	nWrist=1
+	nJ4Flag=0
+	nJ6Flag=0
+	bSimVisible=False
+}
+Point15 {
+	nNumber=18
+	sLabel="e"
+	sDescription=""
+	rX=137.112
+	rY=44.478
+	rZ=-2.009
+	rU=0.12
+	rV=-0.002
+	rW=-179.522
 	nLocal=1
 	nHand=1
 	nElbow=1

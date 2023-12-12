@@ -1,15 +1,15 @@
-ENVT0100,LM:2023/11/21 14:33:19:537,DS:0000001571,CS:10330,MA:0A-00-27-00-00-11,EI:           
-sActiveChild="Stack_up.prg"
-bMdiMaximized=False
+ENVT0100,LM:2023/12/08 03:42:58:037,DS:0000001843,CS:29992,MA:0A-00-27-00-00-12,EI:           
+sActiveChild="test1.prg"
+bMdiMaximized=True
 ProgramFile1 {
 	sName="Main.prg"
-	bOpened=True
+	bOpened=False
 	nWinState=0
 	Window {
-		nLeft=474
-		nTop=3
-		nWidth=645
-		nHeight=728
+		nLeft=-4
+		nTop=-16
+		nWidth=592
+		nHeight=479
 	}
 }
 ProgramFile2 {
@@ -17,21 +17,43 @@ ProgramFile2 {
 	bOpened=False
 	nWinState=0
 	Window {
-		nLeft=34
-		nTop=21
+		nLeft=58
+		nTop=54
 		nWidth=954
 		nHeight=728
 	}
 }
 ProgramFile3 {
 	sName="Stack_up.prg"
-	bOpened=True
+	bOpened=False
 	nWinState=0
 	Window {
-		nLeft=0
-		nTop=0
-		nWidth=600
-		nHeight=347
+		nLeft=-4
+		nTop=10
+		nWidth=674
+		nHeight=459
+	}
+}
+ProgramFile4 {
+	sName="Task3.prg"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=9
+		nTop=17
+		nWidth=516
+		nHeight=461
+	}
+}
+ProgramFile5 {
+	sName="test1.prg"
+	bOpened=True
+	nWinState=2
+	Window {
+		nLeft=50
+		nTop=31
+		nWidth=653
+		nHeight=374
 	}
 }
 nIncludeFileCount=0
@@ -51,20 +73,20 @@ sActiveWindow="main.prg"
 CmdWindow {
 	bOpened=False
 	Window {
-		nLeft=1
-		nTop=4
+		nLeft=35
+		nTop=19
 		nWidth=803
-		nHeight=728
+		nHeight=434
 	}
 	nWinState=0
 }
 RunWindow {
 	bOpened=False
 	Window {
-		nLeft=4
-		nTop=22
-		nWidth=682
-		nHeight=383
+		nLeft=21
+		nTop=38
+		nWidth=464
+		nHeight=384
 	}
 }
 IOLabelEditor {
@@ -80,10 +102,10 @@ IOLabelEditor {
 IOMonitor {
 	bOpened=False
 	Window {
-		nLeft=1088
-		nTop=300
-		nWidth=520
-		nHeight=488
+		nLeft=781
+		nTop=190
+		nWidth=478
+		nHeight=485
 	}
 }
 TaskMgr {
@@ -107,8 +129,8 @@ Macros {
 RobotMgr {
 	bOpened=False
 	Window {
-		nLeft=45
-		nTop=21
+		nLeft=9
+		nTop=16
 		nWidth=689
 		nHeight=448
 	}

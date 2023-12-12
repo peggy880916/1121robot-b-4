@@ -1,8 +1,9 @@
 Integer Tokens
 Integer Blocks
+Integer number
 Double TokenHeight
 Double BlockHeight
-Function main
+Function Stack_up
 
 Motor On
 Power High
@@ -12,8 +13,9 @@ SpeedS 500
 AccelS 5000
 Tool 1
 
-Tokens = 3
-Blocks = 3
+number = 1
+Tokens = 6
+Blocks = 6
 TokenHeight = 6.0
 BlockHeight = 6.0
 Integer TokenID
@@ -21,53 +23,52 @@ Integer BlockID
 
 Go Retract_Safe
 
-For BlockID = Blocks To 1 Step -1
-	Pick_Infeed_Token()
-	Alignment_Token()
-	Pick_Infeed_Block()
-	Alignment_Block()
-Next BlockID
-
-	
+For TokenID = Tokens To 1 Step -1
+	Pick_Infeed_Block_2()
+	Pick_Infeed_Token_2()
 Next TokenID
 
 Go Retract_Safe
 
 Fend
-Function Pick_Infeed_Token
-	'Pick Token from Infeed 
-	
+Function Pick_Infeed_Token_2
+	'Pick Token from Infeed 將feeder那的圓形吸起來
 	Print "Picking Token from Infeed. Token ID = ", Tokens
-	Go X(30) +Y(45) +Z(50 + (Tokens * TokenHeight)) /4 CP
-	Move X(30) +Y(45) +Z(Tokens * TokenHeight) /4
+	Go point2 +X(-29) +Y(-15) +Z(50 + (Tokens * TokenHeight)) CP
+	Move point2 +X(-29) +Y(-15) +Z(Tokens * TokenHeight - 2)
 	On 8
 	Wait .5
-    Move X(30) +Y(45) +X(-1) +Z(50 + (Tokens * TokenHeight)) /4 CP
-	'Tokens = Tokens - 1
+    Move point2 +X(-29) +Y(-15) +X(-1) +Z(50 + (Tokens * TokenHeight)) CP
+	Tokens = Tokens - 1
+	
+	Go point3 +X(-31) +Y(-25) +Z(50 + 6 * number) CP
+	Move point3 +X(-31) +Y(-25) +Z(6 * number + 0.4)
+	Off 8
+	Move point3 +X(-31) +Y(-25) +Z(50 + 6 * number) CP
+	number = number + 1
 Fend
 
-Function Pick_Infeed_Block
-	'Pick Block from Infeed 將feeder那的長方形吸起來
+Function Pick_Infeed_Block_2
+	'Pick Token from Infeed 將feeder那的圓形吸起來
 	Print "Picking Block from Infeed. Block ID = ", Blocks
-	Go X(20) +Y(25) +Z(50 + (Blocks * BlockHeight)) /4 CP
-	Move X(20) +Y(25) +Z(Blocks * BlockHeight) /4
+	Go point2 +X(-25) +Y(-39) +Z(48 + (Blocks * TokenHeight)) CP
+	Move point2 +X(-25) +Y(-39) +Z(Blocks * TokenHeight - 2)
 	On 8
-	Wait .5
-	Move X(20) +Y(25) +X(-1) +Y(1) +Z(50 + (Blocks * BlockHeight)) /4 CP
-	'Blocks = Blocks - 1
+	Wait 1
+    Move point2 +X(-25) +Y(-39) +X(-1) +Z(48 + (Blocks * TokenHeight)) CP
+	Blocks = Blocks - 1
+	
+	Go point3 +X(-31) +Y(-25) +Z(50 + 6 * number) CP
+	Move point3 +X(-31) +Y(-25) +Z(6 * number + 0.4)
+	Off 8
+	Move point3 +X(-31) +Y(-25) +Z(50 + 6 * number) CP
+	number = number + 1
+Fend
+Function TEST
+  Do
+    If Sw(0) = 1 Then Home Else Print "HAHA"
+    
+  Loop
 Fend
 
-Function Alignment_Token
-	'Alignment Token 將圓形的放到fixture
-	Print "Aligning Token. Token ID = ", Tokens
-	Go X(25) +Y(22) +Z(20) /6 CP
-	Move X(25) +Y(22) /6
-	Off 8
-Fend
-Function Alignment_Block
-	'Alignment Block 將長方形的放到fixture
-	Print "Aligning Block. Block ID = ", Blocks
-	Go X(25) +Y(22) +Z(20) /6 CP
-	Move X(25) +Y(22) /6
-	Off 8
-Fend
+

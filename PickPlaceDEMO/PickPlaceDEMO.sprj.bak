@@ -1,12 +1,12 @@
-ENVT0100,LM:2023/11/21 08:41:14:658,DS:0000002853,CS:48554,MA:0A-00-27-00-00-11,EI:           
+ENVT0100,LM:2023/12/08 03:36:50:227,DS:0000003116,CS:13950,MA:0A-00-27-00-00-12,EI:           
 SystemProperties {
 	sRC50Version="5.4.7"
 	sGUID="12c5c843-1391-43e4-a9a5-3629a5d53f6b"
 	bSimple=False
 	sCreated="2019/8/13 上午 11:47:18"
-	sLastModified="2023/11/21 下午 04:41:14"
-	bBuildComplete=False
-	bRebuildRequired=True
+	sLastModified="2023/12/8 上午 11:35:47"
+	bBuildComplete=True
+	bRebuildRequired=False
 	bClearControllerProject=False
 	bClearGlobalPreserves=False
 	sComputerName="TAYLOR"
@@ -25,30 +25,42 @@ UserErrorsFile {
 	sName="UserErrors.dat"
 	nChecksum=0
 }
-nProgramFileCount=3
+nProgramFileCount=5
 ProgramFile1 {
 	sName="Main.prg"
-	bCompiled=False
+	bCompiled=True
 	bStoreInController=True
-	sTimeSavedInController="2023/8/10 上午 06:25:04"
+	sTimeSavedInController="2023/12/8 上午 02:09:16"
 }
 ProgramFile2 {
 	sName="TCPIPdemo.prg"
-	bCompiled=False
+	bCompiled=True
 	bStoreInController=True
 	sTimeSavedInController="2023/8/31 上午 06:45:18"
 }
 ProgramFile3 {
 	sName="Stack_up.prg"
-	bCompiled=False
+	bCompiled=True
 	bStoreInController=True
-	sTimeSavedInController="0001/1/1 上午 12:00:00"
+	sTimeSavedInController="2023/12/8 上午 02:18:28"
+}
+ProgramFile4 {
+	sName="Task3.prg"
+	bCompiled=True
+	bStoreInController=True
+	sTimeSavedInController="2023/12/8 上午 02:26:02"
+}
+ProgramFile5 {
+	sName="test1.prg"
+	bCompiled=True
+	bStoreInController=True
+	sTimeSavedInController="2023/12/8 上午 03:31:47"
 }
 nIncludeFileCount=0
 nPointFileCount=1
 PointFile1 {
 	sName="Points.pts"
-	sTimeSavedInController="2023/11/21 上午 07:05:19"
+	sTimeSavedInController="2023/11/23 上午 06:05:59"
 }
 OperatorSettings {
 	OperatorWindow {
